@@ -25,7 +25,7 @@ const skills = [
 
 const SkillsList: FC = () => {
     return (
-        <section className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-3 md:gap-5">
+        <section className="container mx-auto px-5 grid grid-cols-1 gap-y-16 md:grid-cols-3 md:gap-x-5 md:gap-y-0">
             {
                 skills.map( skill => (
                     <SkillItem

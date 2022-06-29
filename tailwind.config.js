@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         salmon: 'salmon',
+        amber: colors.amber[50]
       },
 
       width: {

@@ -12,7 +12,7 @@ const Skills = dynamic( () => import( /* webpackChunkName: "lazySkills" */ './co
 
 const HomePage: NextPage = () => {
     return (
-        <div className="flex flex-col justify-start overflow-x-hidden">
+        <div className="flex flex-col justify-start overflow-x-hidden bg-amber">
             <Home />
             <Suspense fallback={`Loading...`}>
                 <About />

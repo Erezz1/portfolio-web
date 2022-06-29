@@ -28,8 +28,8 @@ const Title: FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-50 mb-3">{'<Hola, Mundo! />'}</h1>
-            <h3 className="md:text-2xl text-gray-50 mb-10">
+            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-50 mb-3 md:mb-6">{'<Hola, Mundo! />'}</h1>
+            <h3 className="md:text-3xl font-light text-gray-50 mb-8 md:mb-16">
                 Desarrollo de aplicaciones con
                 <Typed
                     className="ml-1 font-bold text-salmon"

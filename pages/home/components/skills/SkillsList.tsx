@@ -7,16 +7,19 @@ import SkillItem from './SkillItem';
 
 const skills = [
     {
+        id: "1",
         icon: <FiMonitor />,
         title: 'Frontend',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae reprehenderit doloremque vitae veniam eligendi velit, incidunt obcaecati repellat atque maxime.'
     },
     {
+        id: "2",
         icon: <FaServer />,
         title: 'Backend',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae reprehenderit doloremque vitae veniam eligendi velit, incidunt obcaecati repellat atque maxime.'
     },
     {
+        id: "3",
         icon: <BiCodeBlock />,
         title: 'Gestion',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae reprehenderit doloremque vitae veniam eligendi velit, incidunt obcaecati repellat atque maxime.'
@@ -29,6 +32,7 @@ const SkillsList: FC = () => {
             {
                 skills.map( skill => (
                     <SkillItem
+                        key={ skill.id }
                         icon={ skill.icon }
                         title={ skill.title }
                         description={ skill.description }

@@ -32,4 +32,6 @@ const ProjectItem: ForwardRefExoticComponent<Project & RefAttributes<HTMLLIEleme
     )
 })
 
+ProjectItem.displayName = 'ProjectItemComponent';
+
 export default ProjectItem;

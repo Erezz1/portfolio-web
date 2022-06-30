@@ -44,9 +44,9 @@ const Curtain = () => {
                 variants={ curtainVariant }
                 className="select-none"
             >
-                <motion.div variants={ colorVariant } className="fixed top-0 left-0 h-screen w-full origin-top will-change-transform z-40 bg-red-500" />
-                <motion.div variants={ colorVariant } className="fixed top-0 left-0 h-screen w-full origin-top will-change-transform z-30 bg-salmon" />
-                <motion.div variants={ colorVariant } className="fixed top-0 left-0 h-screen w-full origin-top will-change-transform z-10 bg-amber" />
+                <motion.div variants={ colorVariant } className="fixed top-0 left-0 h-screen w-full origin-top will-change-transform z-40 bg-salmon" />
+                <motion.div variants={ colorVariant } className="fixed top-0 left-0 h-screen w-full origin-top will-change-transform z-30 bg-amber" />
+                <motion.div variants={ colorVariant } className="fixed top-0 left-0 h-screen w-full origin-top will-change-transform z-10 bg-gray-500" />
             </motion.div>
         </AnimatePresence>
     )

@@ -10,11 +10,12 @@ module.exports = {
     extend: {
       colors: {
         salmon: 'salmon',
-        amber: colors.amber[50]
+        amber: colors.amber[50],
       },
 
       width: {
         'text': '700px',
+        '2full': '200%'
       },
 
       maxWidth: {
@@ -23,6 +24,10 @@ module.exports = {
 
       backgroundImage: {
         'laptop-code': 'url("../public/laptop-code.jpg")',
+      },
+
+      lineHeight: {
+        0: '0',
       },
 
       brightness: {

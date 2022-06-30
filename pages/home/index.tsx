@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 
+import Layout from 'components/layout';
 import Home from './components/home';
 const About = dynamic( () => import( /* webpackChunkName: "lazyAbout" */ './components/about'));
 const Skills = dynamic( () => import( /* webpackChunkName: "lazySkills" */ './components/skills'));
@@ -9,13 +10,13 @@ const Contact = dynamic( () => import( /* webpackChunkName: "lazyContact" */ './
 
 const HomePage: NextPage = () => {
     return (
-        <div className="flex flex-col justify-start overflow-x-hidden bg-amber">
+        <Layout>
             <Home />
             <About />
             <Skills />
             <Projects />
-            <Contact />
-        </div>
+            {/* <Contact /> */}
+        </Layout>
     )
 }
 

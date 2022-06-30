@@ -22,7 +22,7 @@ const projects = [
     },
     {
         id: "4",
-        title: "Thullo",
+        title: "Fileshare",
         img: "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     }
 ]
@@ -45,7 +45,7 @@ const variants: Variants = {
 
 const ProjectsList: FC = () => {
 
-    const [ ref, inView, entry ] = useInView({
+    const [ ref, inView ] = useInView({
         threshold: 0.1,
         triggerOnce: false
     });
@@ -64,7 +64,8 @@ const ProjectsList: FC = () => {
                             : "row-span-1 col-start-1 col-end-6 md:col-span-1 md:row-start-2 md:row-end-6"
                         }
                         variants={ variants }
-                        animate={ inView ? 'show' : 'hidden' }
+                        initial="hidden"
+                        animate={ inView && 'show' }
                         transition={{
                             duration: ( 0.3 * (i + 1) ),
                             ease: 'easeInOut',

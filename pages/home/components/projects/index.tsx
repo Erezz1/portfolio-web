@@ -6,7 +6,7 @@ import ProjectsList from './ProjectsList';
 const Projects: FC = () => {
 
     return (
-        <section className="w-full md:h-screen bg-amber py-10 md:py-20 flex relative">
+        <section className="w-full md:h-screen py-10 md:py-20 flex relative">
             <div className="w-full max-w-screen-2xl mx-auto px-5 flex flex-col lg:flex-row items-center justify-center">
                 <div className="w-full mb-10 max-w-md lg:w-auto lg:mb-0">
                     <h2 className="text-salmon text-7xl font-extralight">Proyectos</h2>

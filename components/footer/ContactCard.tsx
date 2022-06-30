@@ -26,7 +26,7 @@ const variants: Variants = {
     },
 
     hidden: {
-        x: 100,
+        x: -100,
         opacity: 0,
     }
 }

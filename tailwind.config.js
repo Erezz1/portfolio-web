@@ -23,6 +23,10 @@ module.exports = {
 
       backgroundImage: {
         'laptop-code': 'url("../public/laptop-code.jpg")',
+      },
+
+      brightness: {
+        25: '.25',
       }
     },
   },
